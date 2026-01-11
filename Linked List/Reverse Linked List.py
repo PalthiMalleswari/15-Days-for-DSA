@@ -7,6 +7,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         
@@ -27,4 +28,24 @@ class Solution:
         return lat
 
 Time Complexity - O(N)
-Space Complexity - O(1)
+Space Complexity - O(N) // Extra Space for answer
+
+# ============== In Place Reversal ==================
+                                      
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        
+        cur = head
+        prev = None
+        nextt = None
+
+        while cur:
+            nextt = cur.next
+            cur.next = prev
+            prev = cur
+            cur = nextt
+
+        return prev
+            
+Time Complexity - O(N)
+Space Complexity - O(1)                            
