@@ -14,7 +14,7 @@ class Solution:
                 l = mid+1
         return ans
 
-Time Complexity - O(NlogN)
+Time Complexity - O(logN)
 Space Complexity - O(1)
 
 
@@ -31,5 +31,5 @@ class Solution:
             else:
                 l = mid+1
         return l
-Time Complexity - O(NlogN)
+Time Complexity - O(logN)
 Space Complexity - O(1)
