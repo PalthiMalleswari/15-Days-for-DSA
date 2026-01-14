@@ -19,5 +19,5 @@ class Solution:
         
         return -1
 
-Time Complexity - O(N log N)
+Time Complexity - O(log N)
 Space Complexity - O(1)
